@@ -1,13 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+<!-- HEAD -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Actividad Javier</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Bienvenido al portafolio de Javier Vizcaino</h1>
-    
+<!-- HEADER -->
+    <header class="header" id="inicio">
+        <!-- MENU -->
+        <img class="hamburguer" src="/img/hamburguesa.svg" alt="" >
+        <nav class="menu-navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#caracteristicas">Caracteristicas de nuestra Marca</a>
+            <a href="#productos">Nuestros productos</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#opiniones">Opiniones</a>
+            <a href="#contacto">Contacta con Nosotros</a>
+            <a href="#rrss">Nuestras Redes Sociales</a>
+        </nav>
+        <!-- INICIO -->
+        <div class="contenedor head">
+            <h1 class="titulo">Bienvenido a Phono Store</h1>
+            <p class="copy">Creamos la mejor tecnologia para ti</p>
+            <!-- WAVE SUPERIOR -->
+            <div class="svg-hero" style="height: 150px; overflow: hidden;">
+                <svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #a1c4fd;">
+                </path>
+                </svg>
+            </div>
+        </div>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <!-- CARACTERISTICAS -->
+        <section class="services contenedor" id="caracteristicas">
+            <h2 class="subtitulo">Phono Store</h2>
+            <div class="contenedor-servicio">
+                <img src="/img/ilustracion1.svg" alt="">
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">1</span>Innovacion</h3>
+                        <p>Nuestra marca se caracteriza por apostar por la innovacion en nuevas tecnologias. Pruebe nuestros productos y seguro que no se arrepentirá</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">2</span>Calidad</h3>
+                        <p>Apostamos por proporcionar la maxima calidad a todos nuestros productos, a un precio razonable.</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">3</span>Envios rapidos y seguros</h3>
+                        <p>Trabajamos con las mejores compañias de envios en rapidez y seguridad. Envios a todo el mundo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CONTENEDOR ANTES DEL SLIDER DE PRODUCTOS -->
+        <section class="info">
+            <div class="contenedor">
+                <h2 class="titulo">Descubra nuestra gama de productos</h2>
+            </div>
+        </section>
+        <!-- SLIDER FOTOS -->
+        <section class="slide-contenedor" id="productos">
+            <div class="miSlider">
+                <img src="/img/1.jpg" alt="">
+            </div>
+            <div class="miSlider">
+                <img src="/img/2.jpg" alt="">
+            </div>
+            <div class="miSlider">
+                <img src="/img/3.jpg" alt="">
+            </div>
+            <div class="miSlider">
+                <img src="/img/4.jpg" alt="">
+            </div>
+            <div class="miSlider">
+                <img src="/img/5.jpg" alt="">
+            </div>
+            <div class="miSlider">
+                <img src="/img/6.jpg" alt="">
+            </div>
+            <!-- FLECHAS SLIDER -->
+            <div class="direcciones">
+                <a href="javascript:void();" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+                <a href="javascript:void();" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+            </div>
+            <!-- BARRITAS PIE DE FOTO -->
+            <div class="barras">
+                <span class="barra active" onclick="posicionSlide(1)"></span>
+                <span class="barra" onclick="posicionSlide(2)"></span>
+                <span class="barra" onclick="posicionSlide(3)"></span>
+                <span class="barra" onclick="posicionSlide(4)"></span>
+                <span class="barra" onclick="posicionSlide(5)"></span>
+                <span class="barra" onclick="posicionSlide(6)"></span>
+            </div>
+        </section>
+        <!-- GALERIA CON LIGHTBOX -->
+        <section class="gallery" id="galeria">
+            <div class="contenedor">
+                <h2 class="subtitulo">Galeria</h2>
+                <div class="contenedor-galeria">
+                    <img src="/img/1.jpg" alt="" class="img-galeria">
+                    <img src="/img/2.jpg" alt="" class="img-galeria">
+                    <img src="/img/3.jpg" alt="" class="img-galeria">
+                    <img src="/img/4.jpg" alt="" class="img-galeria">
+                    <img src="/img/5.jpg" alt="" class="img-galeria">
+                    <img src="/img/6.jpg" alt="" class="img-galeria">
+                </div>
+            </div>
+        </section>
+        <!-- ABRIR Y CERRAR FOTO -->
+        <div class="imagen-light">
+            <img src="/img/close.svg" alt="" class="close">
+            <img src="/img/1.jpg" alt="" class="agregar-imagen">
+        </div>
+        
+        <!-- SLIDER TESTIMONIOS -->
+        <section class="contenedorSlider" id="opiniones">
+            <h2 class="subtitulo">Opiniones de nuestros clientes</h2>
+            <div class="slider-contenedor">
+                <div class="slider-test">
+                    <p>Productos increibles a un gran precio</p>
+                    <img src="/img/cliente1.jpg" alt="">
+                    <h3>Sandra Marco Ibañez</h3>
+                </div>
+                <div class="slider-test">
+                    <p>Sencillamente los mejores productos calidad / precio</p>
+                    <img src="/img/cliente2.jpg" alt="">
+                    <h3>Ivan Ramos Pardo</h3>
+                </div>
+                <div class="slider-test">
+                    <p>El envio un poco lento pero el producto muy bien</p>
+                    <img src="/img/cliente3.jpg" alt="">
+                    <h3>Yolanda Garcia Martinez</h3>
+                </div>
+                <div class="slider-test">
+                    <p>Sin duda volvere a repetir con vosotros</p>
+                    <img src="/img/cliente4.jpg" alt="">
+                    <h3>Francisco Rodriguez Morte</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- WAVE INFERIOR -->
+    <div class="svg-wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+        style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+            style="stroke: none; fill: #a1c4fd;"></path>
+    </svg></div>
+    <!-- FOOTER -->
+    <footer id="contacto">
+        <section class="contenedor" id="contact-us">
+            <div class="contenedor">
+                <h2 class="titulo">Contáctanos</h2>
+                <!-- FORMULARIO -->
+                <form id="form" action="" class="form">
+                    <input class="input" type="text" name="" id="nombre" placeholder="Nombre">
+                    <input class="input" type="email" name="" id="email" placeholder="Email">
+                    <textarea class="input" name="" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <input classs="input" type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>            
+    </footer>
+    <!-- REDES SOCIALES -->
+    <div class="contenedor footer-content">
+        <div class="contact-us" id="rrss">
+            <h2 class="brand">Phono Store</h2>
+            <p>Siguenos en nuestras redes sociales</p>
+        </div>
+        <div class="social-media">
+            <a href="./index.html" class="social-media-icon">
+                <i class='bx bxl-facebook' ></i>
+            </a>
+            <a href="./index.html" class="social-media-icon">
+                <i class='bx bxl-instagram' ></i>
+            </a>
+            <a href="./index.html" class="social-media-icon">
+                <i class='bx bxl-twitter' ></i>
+            </a>
+        </div>
+    </div>
+    <!-- SCRIPTS UTILIZADOS -->
+    <script src="/js/slider.js"></script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/lightbox.js"></script>
+    <script src="/js/validar.js"></script>
+    <script src="/js/testimonios.js"></script>
 </body>
 </html>
